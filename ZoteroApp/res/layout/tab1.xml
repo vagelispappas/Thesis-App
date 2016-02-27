@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:text="@string/Info_Tab"
+        android:textSize="18dip" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/label_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_type" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+      <TableRow
+          android:id="@+id/tableRow2"
+          android:layout_width="match_parent"
+          android:layout_height="50dp" >
+
+          <TextView
+              android:id="@+id/label_URL"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/label_url" />
+
+          <TextView
+              android:id="@+id/tv_url"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </TableRow>
+
+      <TableRow
+          android:id="@+id/tableRow3"
+          android:layout_width="match_parent"
+          android:layout_height="50dp" >
+          
+          <TextView
+              android:id="@+id/label_author"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/label_author" />
+
+          <TextView
+              android:id="@+id/tv_author"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textAppearance="?android:attr/textAppearanceSmall" />
+      </TableRow>
+
+       <TableRow
+           android:id="@+id/tableRow4"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" >
+          
+          <TextView
+              android:id="@+id/label_abstract"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/label_abstract" />
+
+          <TextView
+              android:id="@+id/tv_abstract"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:maxLines="100"
+              android:scrollbars="vertical" />
+      </TableRow>
+
+</LinearLayout>
